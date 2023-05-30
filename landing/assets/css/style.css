@@ -1,0 +1,29 @@
+.clearfix{
+    content: " ";
+    clear: both;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.menu{
+    float: right;
+}
+
+.menu ul{
+    margin: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 30px;
+}
