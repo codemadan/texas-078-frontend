@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+</head>
+<body>
+    
+
+    <h1>Hello World!!!</h1>
+
+    <div id="demo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quibusdam deleniti voluptatum recusandae. Cupiditate repellendus totam aperiam culpa aliquam. Expedita, eius. Non voluptatibus ea minus minima esse voluptate aspernatur cumque?
+        </p>
+    </div>
+
+    <button onclick="myCounter()">Click Me!</button>
+
+    <div id="counter">0</div>
+
+<script>
+    console.log("Hello World!!!");
+
+    // alert("Hello World!!!");
+
+
+    document.getElementById("demo").innerHTML = "ncfasjkdb casuvcukyeafs"
+
+    document.getElementById("demo").style.color = "red";
+
+    // window.print();
+
+    // js functions
+
+    function myCounter(){
+        var counter = document.getElementById("counter").innerHTML;
+        let a = '29';
+        const b = '30';
+
+        console.log( 'a = ' + a );
+        console.log( 'b = ' + b );
+
+        document.getElementById("counter").innerHTML = ++counter;
+    }
+
+    const fruits = ['Apple', 'Banana', 'Orange'];
+
+    console.log(fruits);
+
+    // fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
+
+    fruits.push('Mango');
+
+    console.log(fruits);
+
+
+
+</script>
+
+</body>
+</html>
