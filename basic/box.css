@@ -1,0 +1,11 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.col_3_in_1{
+    width: 30%;
+    border: 1px solid #333;
+    padding: 10px;
+}
