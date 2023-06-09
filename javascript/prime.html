@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+<body>
+
+    <form action="" id="prime">
+        <input min="2" type="number" id="digit" name="digit" placeholder="Enter the number">
+        <button type="button" onclick="checkPrime()">Check</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function checkPrime(){
+            let digit = document.getElementById("digit").value;
+            digit = parseInt(digit);
+            
+            if( digit < 2 ){
+                document.getElementById("result").innerHTML = "Can't be below 2";
+                return;
+            }
+            else{
+
+                let max = digit / 2;
+                max = parseInt(max);
+                let isPrime = true;
+                for( let i = 2; i <= max; i++ ){
+                    if( digit % i === 0 ){
+                        document.getElementById("result").innerHTML = "Not Prime" + " || Divisible by " + i;
+                        isPrime = false;
+                        return;
+                    }
+                }
+                if(isPrime){
+                    document.getElementById("result").innerHTML = "Prime";
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
