@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="" id="calculator">
+        <input type="number" id="first_digit" name="first_digit">
+        <span>+</span>
+        <input type="number" id="second_digit" name="second_digit">
+
+        <span>=</span>
+
+        <span id="result"></span>
+
+        <div>
+            <button type="button" onclick="sub()">Calculate</button>
+        </div>
+    </form>
+
+
+    <script>
+
+        function sub(){
+            // read value of #first_digit
+            let first_digit = document.getElementById('first_digit').value;
+            let second_digit = document.getElementById('second_digit').value;
+
+            let sum = Number(first_digit) + Number(second_digit);
+
+            document.getElementById('result').innerHTML = sum;
+
+        }
+
+        
+
+
+
+    </script>
+
+</body>
+</html>
