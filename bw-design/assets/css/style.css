@@ -4,17 +4,47 @@ img{
 
 .slide{
     background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slider-inner{
     width: 400px;
+    padding-top: 60px;
     color: #fff;
     position: relative;
-    height: 400px;
+    height: 500px;
 }
 
 .button_wrapper{
     position: absolute;
     bottom: 20px;
     width: 100%;
+}
+
+
+.header-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.dropdown-toggle.show,
+.nav-link:hover{
+    color: #e1da10;
 }
